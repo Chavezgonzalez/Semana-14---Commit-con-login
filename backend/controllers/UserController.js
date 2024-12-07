@@ -86,12 +86,7 @@ export default {
                 $set: {
                     name,
                     password,
-                    email,
-                    lastUser:{
-                        name:prevUser.name,
-                        password:prevUser.password,
-                        email:prevUser.email
-                    }
+                    email
                 }
             });
             res.status(200).json({
